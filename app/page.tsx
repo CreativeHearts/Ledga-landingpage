@@ -19,17 +19,17 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex bg-white min-h-screen flex-col items-center justify-between">
+    <main className="flex bg-white  min-h-screen flex-col items-center justify-between">
       {/* Main Screen Board */}
-      <div className="">
+      <div className="w-full">
         <Image
-          className="h-[500px]"
+          className="h-[600px] w-full"
           src={"/giant company.jpg"}
           alt={"banner"}
           width={1000}
           height={1000}
         />
-        <div className="bg-black bg-opacity-40 w-full h-[500px] top-0 absolute"></div>
+        <div className="bg-black bg-opacity-40 w-full h-[600px] top-0 absolute"></div>
 
         <div className={`absolute top-1/3 text-[30px] px-4`}>
           <p className="text-white font-bold">
@@ -108,7 +108,7 @@ export default function Home() {
       </div>
 
       {/* What We Offer */}
-      <div className=" bg-[#F4F7FA]  py-[100px] flex flex-col items-center">
+      <div className="  w-full bg-[#F4F7FA]  py-[100px] flex flex-col items-center">
         <p className="font-bold text-2xl text-center mb-[20px]">
           What You Should Choose Us
         </p>
@@ -163,7 +163,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col w-full  md:flex-row items-center">
           <div
-            className={`${montserrat.className} flex flex-col md:flex-row  items-end  py-[10px] justify-center gap-[40px] w-full text-baseGray`}>
+            className={`${montserrat.className} flex flex-col md:flex-row  items-center  py-[10px] justify-center gap-[40px] w-full text-baseGray`}>
             <div className="flex flex-col items-center gap-[20px]">
               <TbSchool className="text-[50px] text-baseBlue" />
               <p className="font-bold">Schools</p>

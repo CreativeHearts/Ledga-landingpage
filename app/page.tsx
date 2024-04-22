@@ -49,7 +49,7 @@ export default function Home() {
       </div>
 
       {/* Metrics */}
-      <div className="flex flex-row justify-between py-[100px] px-[40px] gap-10">
+      <div className="flex flex-col items-center md:flex-row justify-between py-[100px] px-[40px] gap-10">
         <div className="flex flex-row items-center gap-2">
           <p className="text-4xl font-bold ">70k</p>
           <p className="text-sm">Wallets Created</p>
@@ -59,7 +59,7 @@ export default function Home() {
           <p className="text-sm">Transactions processed monthly</p>
         </div>
         <div className="flex flex-row items-center gap-2">
-          <p className="text-4xl font-bold ">4.9</p>
+          <p className="text-4xl font-bold ">4.9M</p>
           <p className="text-sm">Transactions processed monthly</p>
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function Home() {
             className="h-[300px] w-[300px]"
           />
           <div
-            className={`${montserrat.className} gap-4 flex flex-col text-baseGray`}>
+            className={`${montserrat.className} gap-4 px-[20px] flex flex-col text-baseGray`}>
             <div className="flex flex-row gap-[20px]">
               <p className="rounded-full inline-flex text-[#473BF0] font-bold self-center items-center justify-center h-[30px] w-[30px] bg-subBlue bg-opacity-15">
                 1

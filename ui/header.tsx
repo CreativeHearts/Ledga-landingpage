@@ -7,11 +7,15 @@ export default function Header() {
         <Link href={"/"} className="font-bold text-white text-[25px] mr-6">
           Ledga
         </Link>
-        <div className="flex flex- items-center gap-[10px]">
-          <Link href={"/"} className="text-white font-light text-[16px]">
+        <div className="flex flex-row items-end gap-[10px]">
+          <Link
+            href={"/"}
+            className="text-white font-light text-[10px] md:text-[16px]">
             About Us
           </Link>
-          <Link href={"/"} className="text-white font-light text-[16px]">
+          <Link
+            href={"/"}
+            className="text-white font-light text-[10px] md:text-[16px]">
             Contact Us
           </Link>
         </div>

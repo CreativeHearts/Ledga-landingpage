@@ -110,15 +110,15 @@ export default function Home() {
       {/* What We Offer */}
       <div className="  w-full bg-[#F4F7FA]  py-[100px] flex flex-col items-center">
         <p className="font-bold text-2xl text-center mb-[20px]">
-          What You Should Choose Us
+          Why You Should Choose Us
         </p>
         <div className="flex flex-col gap-[40px] md:flex-row items-center">
           <Image
             src={"/choose us.jpg"}
             alt="sub image"
-            width={300}
-            height={300}
-            className="h-[300px] w-[300px]"
+            width={500}
+            height={500}
+            className=" object-cover "
           />
           <div
             className={`${montserrat.className} gap-4 px-[20px] flex flex-col text-baseGray`}>
@@ -163,7 +163,7 @@ export default function Home() {
         </p>
         <div className="flex flex-col w-full  md:flex-row items-center">
           <div
-            className={`${montserrat.className} flex flex-col md:flex-row  items-center  py-[10px] justify-center gap-[40px] w-full text-baseGray`}>
+            className={`${montserrat.className} grid grid-cols-2 md:flex md:flex-row  items-center  py-[10px] justify-center gap-[40px] w-full text-baseGray`}>
             <div className="flex flex-col items-center gap-[20px]">
               <TbSchool className="text-[50px] text-baseBlue" />
               <p className="font-bold">Schools</p>

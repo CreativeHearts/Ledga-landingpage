@@ -1,19 +1,14 @@
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
-import { AiFillWallet } from "react-icons/ai";
 import {
 	BsFillChatDotsFill,
 	BsFillWalletFill,
 	BsHospital,
-	BsHospitalFill,
 } from "react-icons/bs";
-import { CiMoneyBill } from "react-icons/ci";
 import { FaMoneyBills } from "react-icons/fa6";
 import { GrPower } from "react-icons/gr";
-import { FaHotel, FaSchool } from "react-icons/fa";
 import { TbBuildingSkyscraper, TbSchool } from "react-icons/tb";
 import { LuHotel } from "react-icons/lu";
-import { IoSchool } from "react-icons/io5";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 

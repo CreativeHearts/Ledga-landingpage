@@ -79,7 +79,7 @@ export default function Home() {
 						Management
 					</h3>
 					<p className="text-xs mt-6 leading-1 w-[50%] lg:text-lg lg:leading-5 text-white">
-						Simplify and streamline your institution's finances with
+						Simplify and streamline your institutions finances with
 						Ledga&apo;s innovative platform. Experience transparency
 						and efficiency like never before.
 					</p>

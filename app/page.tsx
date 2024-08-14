@@ -4,18 +4,8 @@ import Button from '@/ui/Button';
 import desktopCard from '@/public/Subtract (2).png';
 import halfImage from '@/public/half-image.png';
 import iphone from '@/public/iphone.png';
-import { Montserrat } from 'next/font/google';
-import {
-  BsFillChatDotsFill,
-  BsFillWalletFill,
-  BsHospital,
-} from 'react-icons/bs';
-import { FaMoneyBills } from 'react-icons/fa6';
-import { GrPower } from 'react-icons/gr';
-import { TbBuildingSkyscraper, TbSchool } from 'react-icons/tb';
-import { LuHotel } from 'react-icons/lu';
-
-const montserrat = Montserrat({ subsets: ['latin'] });
+// import woman from '@/public/woman .png';
+import lady from '@/public/lady.png';
 
 export default function Home() {
   return (
@@ -31,9 +21,9 @@ export default function Home() {
             Management
           </h3>
           <p className='text-xs mt-4 leading-1 text-white'>
-            Simplify and streamline your institution's finances with Ledga's
-            innovative platform. Experience transparency and efficiency like
-            never before.
+            Simplify and streamline your institution&apos;s finances with
+            Ledga&apos;s innovative platform. Experience transparency and
+            efficiency like never before.
           </p>
         </div>
       </div>
@@ -76,9 +66,9 @@ export default function Home() {
             Management
           </h3>
           <p className='text-xs mt-6 leading-1 w-[50%] lg:text-lg lg:leading-5 text-white'>
-            Simplify and streamline your institution's finances with Ledga's
-            innovative platform. Experience transparency and efficiency like
-            never before.
+            Simplify and streamline your institution&apos;s finances with
+            Ledga&apos;s innovative platform. Experience transparency and
+            efficiency like never before.
           </p>
         </div>
         <div>
@@ -104,185 +94,39 @@ export default function Home() {
         </div>
       </div>
       <p className=' text-center mt-24'>
-        worked and supported by many fininacial services{' '}
+        worked and supported by many fininacial services
       </p>
+
+      {/* <div className='flex w-[80%] mx-auto mt-24 '>
+        <div>
+          <h2 className='font-bold text-3xl text-subBlue text-center'>
+            Our Solution
+          </h2>
+          <p className='text-subBlue'>
+            ledga provides an intuitive web application for educational
+            institution to manage finances effortlessly. with zero onboarding
+            costs, administrators can create sub-accounts and member wallet,
+            monitor financial flow, delegate roles, simplify fee collection and
+            enhance payment transparency, all through user friendly interface,
+            achieving greater efficiency and transparency.
+          </p>
+        </div>
+        <Image src={woman} alt='lady' className='w-[70%]' />
+      </div> */}
+      <div className='w-[80%] mx-auto mt-32 relative xs:static xs:flex xs:flex-col xs:items-center'>
+        <h2 className='font-bold text-3xl text-subBlue text-center absolute top-[30%] xs:static left-[20%] xs:text-center '>
+          Our Solution
+        </h2>
+        <p className='text-subBlue absolute left-20 top-[40%] w-[40%] justify-end xs:static xs:text-center xs:w-[90%] xs:mt-8'>
+          ledga provides an intuitive web application for educational
+          institution to manage finances effortlessly. with zero onboarding
+          costs, administrators can create sub-accounts and member wallet,
+          monitor financial flow, delegate roles, simplify fee collection and
+          enhance payment transparency, all through user friendly interface,
+          achieving greater efficiency and transparency.
+        </p>
+        <Image src={lady} alt='lady' className='' />
+      </div>
     </main>
   );
-  // return (
-  // <main className='flex bg-white  min-h-screen flex-col text-black items-center '>
-  //   {/* Main Screen Board */}
-  //   <div className='flex justify-center items-center h-screen sm:hidden'>
-  //     <Image
-  //       className='block sm:w-450px w-full mr-0 absolute  pl-7 '
-  //       src={blueCard}
-  //       alt={'banner'}
-  //       // width={1000}
-  //       // height={1000}
-  //     />
-  //     {/* <div className='bg-black bg-opacity-40 w-full h-[600px] top-0 absolute'></div> */}
-  //     <div
-  //       className={`relative top-[-40px] left-3 bottom-14 text-[30px] px-4 w-72`}
-  //     >
-  //       <h5 className='text-white font-bold leading-6 text-[25px] sm:w-auto '>
-  //         Revolutionizing
-  //         <br />
-  //         Financial
-  //         <br />
-  //         Management
-  //       </h5>
-  //       <p className='text-[10px] font-light text-white mt-4'>
-  //         Simplify and streamline your institution's finances with Ledga's
-  //         innovative platform. Experience transparency and efficiency like
-  //         never before.
-  //       </p>
-  //       {/* <button className='bg-baseBlue w-fit rounded-[5px] text-[15px] mt-[30px] px-[15px] py-[5px] text-white'>
-  //         Get Started
-  //       </button> */}
-  //     </div>
-  //   </div>
-  //   <div className='flex justify-center gap-3 mt-[-50px]'>
-  //     <input
-  //       type='text'
-  //       className='w-auto rounded-full text-[13px]  bg-blue-200 px-8'
-  //       placeholder='Enter email to get started '
-  //     />
-  //     <button className='bg-baseBlue w-fit rounded-full text-[12px] px-[10px] py-[5px] text-white font-semibold'>
-  //       Get Started
-  //     </button>
-  //   </div>
-  //   {/* Metrics */}
-  //   <div className='flex flex-col items-center md:flex-row justify-between py-[100px] px-[40px] gap-10'>
-  //     <div className='flex flex-row items-center gap-2'>
-  //       <p className='text-4xl font-bold '>70k</p>
-  //       <p className='text-sm'>Wallets Created</p>
-  //     </div>
-  //     <div className='flex flex-row items-center gap-2'>
-  //       <p className='text-4xl font-bold '>4M+</p>
-  //       <p className='text-sm'>Transactions processed monthly</p>
-  //     </div>
-  //     <div className='flex flex-row items-center gap-2'>
-  //       <p className='text-4xl font-bold '>4.9M</p>
-  //       <p className='text-sm'>Transactions processed monthly</p>
-  //     </div>
-  //   </div>
-  //   <div className='bg-[#E7E9ED] w-full h-[2px]'></div>
-  //   {/* Benefits */}
-  //   <div className='py-[100px]'>
-  //     <p className='font-bold text-2xl text-center mb-[20px]'>
-  //       What Ledga Offers You
-  //     </p>
-  //     <div className='flex flex-col items-center md:flex-row gap-[10px]'>
-  //       <div className='py-[20px] shadow-md rounded-[1px] px-[5px] flex flex-col items-center w-[200px]'>
-  //         <BsFillWalletFill className='text-baseBlue text-[50px]' />
-  //         <p className='mt-2'>Internal Wallet</p>
-  //         <p className='font-light text-center'>
-  //           Every team members has an intenal wallet to make effective
-  //           transactions.
-  //         </p>
-  //       </div>
-  //       <div className='py-[20px] shadow-md rounded-[1px] px-[5px] flex flex-col items-center w-[200px]'>
-  //         <GrPower className='text-baseBlue text-[50px]' />
-  //         <p className='mt-2'>Administrative Powers</p>
-  //         <p className='font-light text-center'>
-  //           Enables businesses grant tailored access to managers & sub admins
-  //           and monitoring overview
-  //         </p>
-  //       </div>
-  //       <div className='py-[20px] shadow-md rounded-[1px] px-[5px] flex flex-col items-center w-[200px]'>
-  //         <FaMoneyBills className='text-baseBlue text-[50px]' />
-  //         <p className='mt-2'>Bill Creation</p>
-  //         <p className='font-light text-center'>
-  //           Enables businesses create bills and levies for their organizations
-  //           and target specific people or groups.
-  //         </p>
-  //       </div>
-  //       <div className='py-[20px] shadow-md rounded-[1px] px-[5px] flex flex-col items-center w-[200px]'>
-  //         <BsFillChatDotsFill className='text-baseBlue text-[50px]' />
-  //         <p className='mt-2'>Sub Accounts</p>
-  //         <p className='font-light text-center'>
-  //           Effectively manage payments fom all your different purposes and
-  //           have them with different accounts
-  //         </p>
-  //       </div>
-  //     </div>
-  //   </div>
-  //   {/* What We Offer */}
-  //   <div className='  w-full bg-[#F4F7FA]  py-[100px] flex flex-col items-center'>
-  //     <p className='font-bold text-2xl text-center mb-[20px]'>
-  //       Why You Should Choose Us
-  //     </p>
-  //     <div className='flex flex-col gap-[40px] md:flex-row items-center'>
-  //       <Image
-  //         src={'/choose us.jpg'}
-  //         alt='sub image'
-  //         width={500}
-  //         height={500}
-  //         className=' object-cover '
-  //       />
-  //       <div
-  //         className={`${montserrat.className} gap-4 px-[20px] flex flex-col text-baseGray`}
-  //       >
-  //         <div className='flex flex-row gap-[20px]'>
-  //           <p className='rounded-full inline-flex text-[#473BF0] font-bold self-center items-center justify-center h-[30px] w-[30px] bg-subBlue bg-opacity-15'>
-  //             1
-  //           </p>
-  //           <div>
-  //             <p className='font-bold'>Swift & Free Transactions</p>
-  //             <p>All transactions on Ledga are totally free and fast</p>
-  //           </div>
-  //         </div>
-  //         <div className='flex flex-row gap-[20px]'>
-  //           <p className='rounded-full inline-flex text-[#473BF0] font-bold self-center items-center justify-center h-[30px] w-[30px] bg-subBlue bg-opacity-15'>
-  //             2
-  //           </p>
-  //           <div>
-  //             <p className='font-bold'>Pocket Money Management</p>
-  //             <p>
-  //               Ledga helps your student manage pocket money and make payments
-  //             </p>
-  //           </div>
-  //         </div>
-  //         <div className='flex flex-row gap-[20px]'>
-  //           <p className='rounded-full inline-flex text-[#473BF0] font-bold self-center items-center justify-center h-[30px] w-[30px] bg-subBlue bg-opacity-15'>
-  //             3
-  //           </p>
-  //           <div>
-  //             <p className='font-bold'>Alternative Income Stream</p>
-  //             <p>Earn every time your student funds their account</p>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  //   {/* Sectors*/}
-  //   <div className='flex flex-col bg-white w-full py-[100px] items-center'>
-  //     <p className='font-bold text-2xl text-center mb-[20px]'>
-  //       Sectors We Operate In
-  //     </p>
-  //     <div className='flex flex-col w-full  md:flex-row items-center'>
-  //       <div
-  //         className={`${montserrat.className} grid grid-cols-2 md:flex md:flex-row  items-center  py-[10px] justify-center gap-[40px] w-full text-baseGray`}
-  //       >
-  //         <div className='flex flex-col items-center gap-[20px]'>
-  //           <TbSchool className='text-[50px] text-baseBlue' />
-  //           <p className='font-bold'>Schools</p>
-  //         </div>
-  //         <div className='flex flex-col items-center gap-[20px]'>
-  //           <LuHotel className='text-[50px] text-baseBlue' />
-  //           <p className='font-bold'>Hotels</p>
-  //         </div>
-  //         <div className='flex flex-col items-center gap-[20px]'>
-  //           <BsHospital className='text-[50px] text-baseBlue' />
-  //           <p className='font-bold'>Hospital</p>
-  //         </div>
-  //         <div className='flex flex-col items-center gap-[20px]'>
-  //           <TbBuildingSkyscraper className='text-[50px] text-baseBlue' />
-  //           <p className='font-bold'>Organisation</p>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  //   <div className='h-[50px] w-full bg-baseBlue'></div>
-  // </main>
-  // );
 }

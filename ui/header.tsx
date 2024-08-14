@@ -28,7 +28,7 @@ const NavBar = () => {
           href={'/'}
           className='text-black font-semibold text-[10px] md:text-[16px]'
         >
-          About Us
+          About U
         </Link>
         <Link
           href={'/'}

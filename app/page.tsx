@@ -67,7 +67,7 @@ export default function Home() {
       </div>
       <div className='w-[90%] mx-auto relative hidden lg:block md:block mt-5 sm:block'>
         <Image src={desktopCard} alt='hero background w-[40%]  absolute ' />
-        <div className='absolute top-[10%] left-[10%] w-[70%] lg:left-[5%]'>
+        <div className='absolute top-[20%] left-[10%] w-[70%] lg:left-[5%]'>
           <h3 className='text-[30px] font-bold leading-8 text-white lg:text-[35px] lg:leading-10  '>
             Revolutionizing
             <br />
@@ -75,7 +75,7 @@ export default function Home() {
             <br />
             Management
           </h3>
-          <p className='text-xs mt-4 leading-1 w-[50%] lg:text-lg lg:leading-5 text-white'>
+          <p className='text-xs mt-6 leading-1 w-[50%] lg:text-lg lg:leading-5 text-white'>
             Simplify and streamline your institution's finances with Ledga's
             innovative platform. Experience transparency and efficiency like
             never before.

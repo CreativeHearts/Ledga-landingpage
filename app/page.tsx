@@ -20,7 +20,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export default function Home() {
 	return (
 		<main>
-			<div className="  w-[90%] ml-auto relative sm:hidden">
+			<div className="  w-full ml-auto relative sm:hidden">
 				<Image src={blueCard} alt="hero background w-[95%]  " />
 				<div className="absolute top-[10%] left-[10%] w-[70%]">
 					<h3 className="text-[30px] font-bold leading-8 text-white ">

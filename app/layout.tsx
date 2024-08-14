@@ -3,6 +3,7 @@ import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 import Header from "@/ui/header";
 import Footer from "@/ui/footer";
+
 const rubik = Rubik({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 

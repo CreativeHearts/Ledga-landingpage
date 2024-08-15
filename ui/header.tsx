@@ -15,7 +15,7 @@ const NavBar = () => {
 	};
 
 	return (
-		<div className="relative shadow-sm  z-50 w-full py-7 px-4 bg-transparent flex justify-between items-center mx-auto">
+		<div className="relative   z-50 w-full py-7 px-4 bg-transparent flex justify-between items-center mx-auto">
 			{/* Logo and Hamburger Menu */}
 			<div className="flex items-center">
 				<Link href={"/"} className="font-bold text-white text-[25px]">

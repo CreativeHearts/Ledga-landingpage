@@ -23,16 +23,16 @@ export default function Home() {
 			<div className="  w-full ml-auto relative sm:hidden">
 				<Image src={blueCard} alt="hero background w-[95%]  " />
 				<div className="absolute top-[10%] left-[10%] w-[70%]">
-					<h3 className="text-[30px] font-bold leading-8 text-white ">
+					<h3 className="text-[30px] font-suisseWorks font-bold leading-8 text-white ">
 						Revolutionizing
 						<br />
 						Financial
 						<br />
 						Management
 					</h3>
-					<p className="text-xs mt-4 leading-1 text-white">
-						Simplify and streamline your institution&apo;s finances
-						with Ledga&apo;s innovative platform. Experience
+					<p className="text-xs mt-4 font-suisseWorks leading-1 text-white">
+						Simplify and streamline your institution&apos;s finances
+						with Ledga&apos;s innovative platform. Experience
 						transparency and efficiency like never before.
 					</p>
 				</div>
@@ -57,10 +57,10 @@ export default function Home() {
 						alt="iphone"
 						className="w-[55%] translate-[50%]"
 					/>
-					<h2 className="text-subBlue text-[12px] bg-white w-fit py-1 px-3 rounded-md absolute top-[28%] left-[-10%] shadow-md">
+					<h2 className="text-subBlue font-suisseIntl text-[12px] bg-white w-fit py-1 px-3 rounded-md absolute top-[28%] left-[-10%] shadow-md">
 						Make Payments
 					</h2>
-					<h2 className="text-subBlue text-[12px] bg-white w-fit py-1 px-3 rounded-md absolute top-[53%] left-[30%] shadow-md">
+					<h2 className="text-subBlue font-suisseIntl text-[12px] bg-white w-fit py-1 px-3 rounded-md absolute top-[53%] left-[30%] shadow-md">
 						Settle your bills
 					</h2>
 				</div>
@@ -71,17 +71,17 @@ export default function Home() {
 					alt="hero background w-[40%]  absolute "
 				/>
 				<div className="absolute top-[20%] left-[10%] w-[70%] lg:left-[5%]">
-					<h3 className="text-[30px] font-bold leading-8 text-white lg:text-[35px] lg:leading-10  ">
+					<h3 className="text-[30px] font-bold font-suisseWorks leading-8 text-white lg:text-[35px] lg:leading-10  ">
 						Revolutionizing
 						<br />
 						Financial
 						<br />
 						Management
 					</h3>
-					<p className="text-xs mt-6 leading-1 w-[50%] lg:text-lg lg:leading-5 text-white">
+					<p className="text-xs mt-6 font-suisseIntl leading-1 w-[50%] lg:text-lg lg:leading-5 text-white">
 						Simplify and streamline your institutions finances with
-						Ledga&apo;s innovative platform. Experience transparency
-						and efficiency like never before.
+						Ledga&apos;s innovative platform. Experience
+						transparency and efficiency like never before.
 					</p>
 				</div>
 				<div>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { Rubik } from 'next/font/google';
+// import { Rubik } from 'next/font/google';
 
-const rubik = Rubik({ subsets: ['latin'] });
+// const rubik = Rubik({ subsets: ['latin'] });
 import blueCard from '@/public/bluecard.png';
 import Button from '@/ui/Button';
 import desktopCard from '@/public/Subtract (2).png';
@@ -183,7 +183,7 @@ export default function Home() {
           <h1 className='absolute top-96 left-[67px] text-white font-bold text-2xl z-10 leading-6'>
             Experience Seamless <br /> Payments with Ease
           </h1>
-          <p className='absolute top-[75%] left-[67px] text-white font-light z-10 text-[15px] leading-5 w-[50%]'>
+          <p className='absolute top-[75%] left-[67px] text-white font-light z-10 text- leading-5 w-[50%]'>
             Make payments, settle bills, and send money to friends effortlessly.
             Fast, free, and secure—discover the future of hassle-free
             transactions today. Join us and simplify your financial life now!

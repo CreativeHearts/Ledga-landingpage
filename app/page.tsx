@@ -1,7 +1,7 @@
 import Image from 'next/image';
-// import { Rubik } from 'next/font/google';
 
-// const rubik = Rubik({ subsets: ['latin'] });
+import '@/app/globals.css';
+
 import blueCard from '@/public/bluecard.png';
 import Button from '@/ui/Button';
 import desktopCard from '@/public/Subtract (2).png';

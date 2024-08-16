@@ -1,11 +1,22 @@
 import Image from 'next/image';
+import { Rubik } from 'next/font/google';
+
+const rubik = Rubik({ subsets: ['latin'] });
 import blueCard from '@/public/bluecard.png';
 import Button from '@/ui/Button';
 import desktopCard from '@/public/Subtract (2).png';
 import halfImage from '@/public/half-image.png';
 import iphone from '@/public/iphone.png';
-// import woman from '@/public/woman .png';
+import woman from '@/public/woman .png';
 import lady from '@/public/lady.png';
+import phones from '@/public/phone2.png';
+import recGrad from '@/public/recradient.png';
+import GetStartedBtn from '@/ui/Button';
+import hand from '@/public/hand.png';
+import subBlue from '@/public/bluesub.png';
+import subBlack from '@/public/Subtract dark (1).png';
+import circle from '@/public/circleblack.png';
+import arrow from '@/public/arrow.png';
 
 export default function Home() {
   return (
@@ -125,7 +136,107 @@ export default function Home() {
           enhance payment transparency, all through user friendly interface,
           achieving greater efficiency and transparency.
         </p>
-        <Image src={lady} alt='lady' className='' />
+        <Image src={lady} alt='lady' className='xs:hidden mb-10' />
+        <Image
+          src={woman}
+          alt='woman'
+          className='hidden xs:block my-10 rounded-3xl'
+        />
+      </div>
+      <div className=' my-16 flex w-[90%] mx-auto justify-evenly gap-9'>
+        <div className='w-[587px] h-[587px] bg-black relative rounded-[40px] shadow-xl'>
+          <h1 className='text-white absolute left-10 top-20 font-bold text-3xl'>
+            Innovative <br />
+            Solutions
+          </h1>
+          <p className='text-white absolute leading-5 left-10 top-40 font-light w-[40%]'>
+            Ledga offers unique futures like internal wallets, peer transfers,
+            sub-accounts, and automated savings, ensuring all your financial
+            needs are met.
+          </p>
+          <div className='absolute bottom-10 left-10'>
+            <GetStartedBtn />
+          </div>
+          <Image
+            src={phones}
+            alt='dark rectangle background'
+            className='w-[46%] absolute bottom-0 right-0 rounded-br-3xl'
+          />
+        </div>
+        <div className='relative w-[587px] h-[587px] shadow-xl rounded-[40px] '>
+          {/* Hand image at the background */}
+          <Image
+            src={hand}
+            alt='hand'
+            layout='fill'
+            objectFit='cover'
+            className='absolute inset-0 rounded-[40px]'
+          />
+          {/* RecGrad image on top */}
+          <Image
+            src={recGrad}
+            alt='recGrad'
+            layout='fill'
+            objectFit='cover'
+            className='absolute inset-0 z-10 rounded-[40px] shadow-md'
+          />
+          <h1 className='absolute top-96 left-[67px] text-white font-bold text-2xl z-10 leading-6'>
+            Experience Seamless <br /> Payments with Ease
+          </h1>
+          <p className='absolute top-[75%] left-[67px] text-white font-light z-10 text-[15px] leading-5 w-[50%]'>
+            Make payments, settle bills, and send money to friends effortlessly.
+            Fast, free, and secure—discover the future of hassle-free
+            transactions today. Join us and simplify your financial life now!
+          </p>
+          <div className='absolute top-10 right-10 z-10'>
+            <GetStartedBtn />
+          </div>
+        </div>
+      </div>
+      <div className='flex w-[90%] mx-auto gap-9'>
+        <div className='relative'>
+          <Image
+            src={subBlue}
+            alt='blue background'
+            className='w-[577.87px] h-[584.76px]'
+          />
+          <p className='absolute top-12  left-28 font-semibold text-[20px] text-white '>
+            Market size
+          </p>
+          <div className='absolute top-20 left-28 text-white '>
+            <h1 className='font-bold text-[70px] '>264</h1>
+            <p className='text-[15px] mt-[-20px] font-light'>
+              Tertiary Institution{' '}
+            </p>
+          </div>
+          <div className='absolute top-48 left-28 text-white '>
+            <h1 className='font-bold text-[70px] '>104.6K</h1>
+            <p className='text-[15px] mt-[-20px] font-light '>Companies</p>
+          </div>
+          <div className='absolute top-80 left-28 text-white '>
+            <h1 className='font-bold text-[70px] '>1.8m</h1>
+            <p className={`text-[15px] mt-[-20px] font-light `}>Students</p>
+          </div>
+          <div>
+            <Image
+              src={circle}
+              alt='circle'
+              className='absolute top-4 right-12 w-[108px] h-[106px]'
+            />
+            <Image
+              src={arrow}
+              alt='arrow'
+              className='absolute top-[3.25rem] right-[83px] w-[37px] h-[36px]'
+            />
+          </div>
+        </div>
+        <div>
+          <Image
+            src={subBlack}
+            alt='black background'
+            className='w-[566.87px] h-[368px]'
+          />
+        </div>
       </div>
     </main>
   );

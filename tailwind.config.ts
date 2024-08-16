@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        xs: { max: '400px' }, // Custom breakpoint for mobile screens 400px and below
+        xs: { max: '420px' }, // Custom breakpoint for mobile screens 400px and below
         sm: '640px', // Default Tailwind small screen breakpoint
         md: '768px', // Default Tailwind medium screen breakpoint
         lg: '1024px', // Default Tailwind large screen breakpoint
@@ -27,6 +27,7 @@ const config: Config = {
         baseBlue: '#3064B6',
         subBlue: '#1358CD',
         input: '#1358CD26',
+        customBlue: '#1358CD',
       },
     },
   },

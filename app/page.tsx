@@ -4,7 +4,7 @@ import '@/app/globals.css';
 
 import blueCard from '@/public/bluecard.png';
 
-import Button from '@/ui/button';
+import Button from '@/ui/Button';
 import desktopCard from '@/public/Subtract (2).png';
 import halfImage from '@/public/half-image.png';
 import iphone from '@/public/iphone.png';
@@ -12,7 +12,7 @@ import woman from '@/public/woman .png';
 import lady from '@/public/lady.png';
 import phones from '@/public/phone2.png';
 import recGrad from '@/public/recradient.png';
-import GetStartedBtn from '@/ui/button';
+import GetStartedBtn from '@/ui/Button';
 import hand from '@/public/hand.png';
 import subBlue from '@/public/bluesub.png';
 import subBlack from '@/public/Subtract dark (1).png';
@@ -23,7 +23,8 @@ import bigBlue from '@/public/bigBlue.png';
 import costumer1 from '@/public/Ellipse 14.png';
 import costumer2 from '@/public/Ellipse 15.png';
 import costumer3 from '@/public/Ellipse 16.png';
-import footerBlack from '@/public/footerblack.png';
+import arrowLeft from '@/public/Vector 2.png';
+import arrowRight from '@/public/Vector 3.png';
 
 export default function Home() {
   return (
@@ -157,7 +158,7 @@ export default function Home() {
             Innovative <br />
             Solutions
           </h1>
-          <p className='text-white absolute leading-5 left-10 top-28 font-light w-[50%] xs:text-[11px] xs:w-[45%]'>
+          <p className='text-white absolute leading-5 left-10 top-40 font-light w-[50%] xs:text-[11px] xs:w-[45%]'>
             Ledga offers unique futures like internal wallets, peer transfers,
             sub-accounts, and automated savings, ensuring all your financial
             needs are met.
@@ -397,11 +398,31 @@ export default function Home() {
         </div>
       </div>
       <div className=' pt-20 pb-28 bg-[#F3F7FC]'>
-        <h1 className='w-[90%] mx-auto pb-9 text-[25px]  font-semibold text-subBlue'>
-          What people think about ledga
-        </h1>
+        <div className='flex w-[90%] mx-auto justify-between align-middle items-center pb-10'>
+          <div>
+            <h1 className='w-[100%] text-[25px] ml-auto font-semibold text-subBlue'>
+              What people think about ledga
+            </h1>
+          </div>
+          <div className='flex gap-2'>
+            <div className=' bg-black w-12 h-12 rounded-full flex justify-center items-center'>
+              <Image
+                src={arrowLeft}
+                alt='Arrow left'
+                className=' w-[20px] h-[19px]'
+              />
+            </div>
+            <div className=' bg-[#BDD0F1] w-12 h-12 flex justify-center rounded-full items-center'>
+              <Image
+                src={arrowRight}
+                alt='Arrow left'
+                className=' w-[20px] h-[19px] '
+              />
+            </div>
+          </div>
+        </div>
         {/*  */}
-        <div className='flex w-[90%] mx-auto gap-5'>
+        <div className='flex w-[100%] ml-[64px] gap-9'>
           <div className='flex flex-col bg-white items-center justify-center py-16 rounded-[40px]'>
             <div className='flex mr-[4.25rem] gap-5 align-middle items-center justify-start'>
               <Image
@@ -465,21 +486,6 @@ export default function Home() {
               manage sub-accounts effortlessly. Highly recommend&quot;
             </p>
           </div>
-        </div>
-        <div className='w-[90%] mx-auto relative'>
-          <div className='flex  w-[60%] gap-1 absolute top-10 ml-9 items-center '>
-            <input
-              type='text'
-              placeholder='Enter email to get started'
-              className='bg-input w-[70%] rounded-full text-[12px] px-8 py-5'
-            />
-            <Button />
-          </div>
-          <Image
-            src={footerBlack}
-            alt='footer background'
-            className='w-[127rem] mt-28'
-          />
         </div>
       </div>
     </main>

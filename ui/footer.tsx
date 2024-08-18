@@ -1,34 +1,48 @@
-import { FaTwitter } from "react-icons/fa6";
-import { FiLinkedin } from "react-icons/fi";
+import { FaTwitter } from 'react-icons/fa6';
+import { FiLinkedin } from 'react-icons/fi';
+import Image from 'next/image';
+import Button from '@/ui/button';
+import footerBlack from '@/public/footerblack.png';
+import X from '@/public/X.png';
+import linkin from '@/public/linkin.png';
 
 export default function Footer() {
-	const currentDate = new Date().getFullYear();
-	return (
-		<div className="w-full flex bg-baseBlue flex-col justify-center items-center py-[40px]">
-			<div className="w-full px-[20px] flex flex-col md:flex-row gap-[40px] py-[20px] justify-between">
-				{/* Contact Us */}
-				<div>
-					<p className="font-bold text-white/80">Contact</p>
-					<p className="text-white">08050605253</p>
-					<p className="text-white">hello@ledgafinance.com</p>
-				</div>
-				{/* Location */}
-				<div className="text-white">
-					<p className="font-bold text-white">Address</p>
-					<p>Abuja, Nigeria</p>
-				</div>
-				{/* More */}
-			</div>
-			<div className="bg-[#E7E9ED] my-[20px] w-full h-[2px]"></div>
-			<div className="w-full flex text-white flex-row justify-between items-end px-[20px]">
-				<p>
-					{currentDate} Copyright. Ledga Innovative Solutions Limited{" "}
-				</p>
-				<div className="flex flex-row gap-[10px] items-end">
-					<FiLinkedin className="text-[20px] text-white" />
-					<FaTwitter className="text-[20px] text-white" />
-				</div>
-			</div>
-		</div>
-	);
+  const currentDate = new Date().getFullYear();
+  return (
+    <div className='w-[90%] mx-auto relative'>
+      <div className='flex  w-[60%] gap-1 absolute top-10 ml-9 items-center '>
+        <input
+          type='text'
+          placeholder='Enter email to get started'
+          className='bg-input w-[70%] rounded-full text-[12px] px-8 py-5'
+        />
+        <Button />
+      </div>
+      <Image
+        src={footerBlack}
+        alt='footer background'
+        className='w-[127rem] mt-28'
+      />
+      <p className='text-white absolute top-[189px] left-[75px] text-[15px] font-light'>
+        {currentDate} Copyright. Ledga Innovative <br /> Solutions Limited
+      </p>
+      <div className='flex'>
+        <div>
+          <div className=' text-white absolute left-[747px] top-[82px]'>
+            <h1 className='text-lg font-semibold'>Contact</h1>
+            <p className='font-light text-[15px]'>08050605253</p>
+            <p className='font-light text-[15px]'>hello@ledgafinance.com</p>
+            <div className=' mt-2 flex gap-4'>
+              <Image src={linkin} alt='linkin logo' className='w-6 h-6' />
+              <Image src={X} alt='X logo' className='w-7 h-6' />
+            </div>
+          </div>
+        </div>
+        <div className='absolute left-[950px] text-white top-[82px]'>
+          <h1 className='text-lg font-semibold'>Address</h1>
+          <p className='font-light text-[15px]'>Abuja, Nigeria</p>
+        </div>
+      </div>
+    </div>
+  );
 }

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/public/logo.jpg';
-import Button from '@/ui/button'; // Replace with your Button component import
+import Button from './Button';
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +15,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className='relative   z-50 w-full py-7 px-4 bg-transparent flex justify-between items-center mx-auto'>
+    <div className=' sticky xs:relative z-50 w-full py-5 px-20 mb-12 bg-transparent flex justify-between items-center mx-auto shadow-md '>
       {/* Logo and Hamburger Menu */}
       <div className='flex items-center'>
         <Link href={'/'} className='font-bold text-white text-[25px]'>
@@ -24,15 +24,12 @@ const NavBar = () => {
       </div>
       {/* Desktop Menu links */}
       <div className='hidden md:flex flex-row items-center gap-6'>
-        <Link
-          href={'/'}
-          className='text-black font-semibold text-[10px] md:text-[16px]'
-        >
+        <Link href={'/'} className='text-black font-semibold text-[14px]'>
           About Us
         </Link>
         <Link
-          href={'/'}
-          className='text-black font-semibold text-[10px] md:text-[16px]'
+          href={'/second-landing-page'}
+          className='text-black font-semibold text-[14px] '
         >
           Contact Us
         </Link>

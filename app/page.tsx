@@ -4,7 +4,7 @@ import '@/app/globals.css';
 
 import blueCard from '@/public/bluecard.png';
 
-import Button from '@/ui/Button';
+import Button from '@/ui/button';
 import desktopCard from '@/public/Subtract (2).png';
 import halfImage from '@/public/half-image.png';
 import iphone from '@/public/iphone.png';
@@ -12,7 +12,7 @@ import woman from '@/public/woman .png';
 import lady from '@/public/lady.png';
 import phones from '@/public/phone2.png';
 import recGrad from '@/public/recradient.png';
-import GetStartedBtn from '@/ui/Button';
+import GetStartedBtn from '@/ui/button';
 import hand from '@/public/hand.png';
 import subBlue from '@/public/bluesub.png';
 import subBlack from '@/public/Subtract dark (1).png';
@@ -20,6 +20,10 @@ import circle from '@/public/circleblack.png';
 import arrow from '@/public/arrow.png';
 import whiteBg from '@/public/subWhite.png';
 import bigBlue from '@/public/bigBlue.png';
+import costumer1 from '@/public/Ellipse 14.png';
+import costumer2 from '@/public/Ellipse 15.png';
+import costumer3 from '@/public/Ellipse 16.png';
+import footerBlack from '@/public/footerblack.png';
 
 export default function Home() {
   return (
@@ -267,7 +271,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-[#1358CD0D] my-20 py-10'>
+      <div className='bg-[#1358CD0D] mt-20 py-10'>
         <h1 className='text-center text-subBlue font-semibold text-[30px] mb-10'>
           Why You Should Choose Us
         </h1>
@@ -328,7 +332,7 @@ export default function Home() {
         <Image
           src={bigBlue}
           alt='Big blue background'
-          className='w-[1461px] h-[854px]'
+          className='w-[1461px] h-[800px]'
         />
         <div className='absolute top-[65px] left-[100px]'>
           <h1 className='text-[30px]  font-semibold text-white'>
@@ -390,6 +394,92 @@ export default function Home() {
               transparent tracking and easy role delegation.
             </p>
           </div>
+        </div>
+      </div>
+      <div className=' pt-20 pb-28 bg-[#F3F7FC]'>
+        <h1 className='w-[90%] mx-auto pb-9 text-[25px]  font-semibold text-subBlue'>
+          What people think about ledga
+        </h1>
+        {/*  */}
+        <div className='flex w-[90%] mx-auto gap-5'>
+          <div className='flex flex-col bg-white items-center justify-center py-16 rounded-[40px]'>
+            <div className='flex mr-[4.25rem] gap-5 align-middle items-center justify-start'>
+              <Image
+                src={costumer1}
+                alt='costomer 1'
+                className='w-[50px] h-[50px] '
+              />
+              <div>
+                <h1 className='text-17px] font-semibold'>Sarah Johnson,</h1>
+                <p className='text-[10px] font-light'>
+                  Principal at Greenfield High School
+                </p>
+              </div>
+            </div>
+            <p className='w-[80%] text-[13px] text-sm mt-5 leading-7'>
+              Ledga has transformed the way we manage our school&apos;s
+              finances. The user-friendly interface and seamless fee collection
+              process have saved us so much time. We can now track payments and
+              manage sub-accounts effortlessly. Highly recommend&quot;
+            </p>
+          </div>
+          <div className='flex flex-col bg-white items-center justify-center rounded-[40px]'>
+            <div className='flex mr-[4.25rem] gap-5 align-middle items-center'>
+              <Image
+                src={costumer2}
+                alt='costomer 1'
+                className='w-[50px] h-[50px] '
+              />
+              <div>
+                <h1 className='text-17px] font-semibold'>Sarah Johnson,</h1>
+                <p className='text-[10px] font-light'>
+                  Principal at Greenfield High School
+                </p>
+              </div>
+            </div>
+            <p className='w-[80%] text-[13px] text-sm mt-5 leading-7'>
+              Ledga has transformed the way we manage our school&apos;s
+              finances. The user-friendly interface and seamless fee collection
+              process have saved us so much time. We can now track payments and
+              manage sub-accounts effortlessly. Highly recommend&quot;
+            </p>
+          </div>
+          <div className='flex flex-col  bg-white items-center justify-center rounded-[40px]'>
+            <div className='flex mr-[4.25rem] gap-5 align-middle items-center'>
+              <Image
+                src={costumer3}
+                alt='costomer 1'
+                className='w-[50px] h-[50px] '
+              />
+              <div>
+                <h1 className='text-17px] font-semibold'>Sarah Johnson,</h1>
+                <p className='text-[10px] font-light'>
+                  Principal at Greenfield High School
+                </p>
+              </div>
+            </div>
+            <p className='w-[80%] text-[13px] mt-5 leading-7'>
+              Ledga has transformed the way we manage our school&apos;s
+              finances. The user-friendly interface and seamless fee collection
+              process have saved us so much time. We can now track payments and
+              manage sub-accounts effortlessly. Highly recommend&quot;
+            </p>
+          </div>
+        </div>
+        <div className='w-[90%] mx-auto relative'>
+          <div className='flex  w-[60%] gap-1 absolute top-10 ml-9 items-center '>
+            <input
+              type='text'
+              placeholder='Enter email to get started'
+              className='bg-input w-[70%] rounded-full text-[12px] px-8 py-5'
+            />
+            <Button />
+          </div>
+          <Image
+            src={footerBlack}
+            alt='footer background'
+            className='w-[127rem] mt-28'
+          />
         </div>
       </div>
     </main>

@@ -27,10 +27,7 @@ const NavBar = () => {
         <Link href={'/'} className='text-black font-semibold text-[14px]'>
           About Us
         </Link>
-        <Link
-          href={'/second-landing-page'}
-          className='text-black font-semibold text-[14px] '
-        >
+        <Link href={'/'} className='text-black font-semibold text-[14px] '>
           Contact Us
         </Link>
         <Button />

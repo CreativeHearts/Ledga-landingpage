@@ -3,8 +3,9 @@ import Image from 'next/image';
 import '@/app/globals.css';
 
 import blueCard from '@/public/bluecard.png';
-
-import Button from '@/ui/Button';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import Button from '@/ui/button';
 import desktopCard from '@/public/Subtract (2).png';
 import halfImage from '@/public/half-image.png';
 import iphone from '@/public/iphone.png';
@@ -20,6 +21,9 @@ import circle from '@/public/circleblack.png';
 import arrow from '@/public/arrow.png';
 import whiteBg from '@/public/subWhite.png';
 import bigBlue from '@/public/bigBlue.png';
+import bigsmall from '@/public/bigsmall.png';
+import rectanglesmall from '@/public/Rectangle 49.png';
+
 import costumer1 from '@/public/Ellipse 14.png';
 import costumer2 from '@/public/Ellipse 15.png';
 import costumer3 from '@/public/Ellipse 16.png';
@@ -30,7 +34,7 @@ export default function Home() {
   return (
     <main>
       <div className='  w-[90%] ml-auto relative sm:hidden'>
-        <Image src={blueCard} alt='hero background w-[95%]  ' />
+        <Image src={blueCard} alt='hero background' className='w-[100%]' />
         <div className='absolute top-[10%] left-[10%] w-[70%]'>
           <h3 className='text-[30px] font-bold leading-8 text-white '>
             Revolutionizing
@@ -46,19 +50,19 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className='flex w-[80%] gap-1 justify-center items-center sm:hidden mt-[-50px] mx-auto'>
+      <div className='flex w-[80%] gap-1 justify-center items-center sm:hidden mt-[-50px] mx-auto xs:w-[90%]'>
         <input
           type='text'
           placeholder='Enter email to get started'
           className='bg-input w-[70%] rounded-full text-[12px] px-8 py-2'
         />
-        <Button />
+        <GetStartedBtn />
       </div>
       <div className='sm:hidden relative mt-10'>
         <Image
           src={halfImage}
           alt='background image'
-          className='mr-10 w-[85%] '
+          className='mr-10 w-[85%]  '
         />
         <div className='absolute top-[10%] left-[20%]'>
           <Image
@@ -109,6 +113,7 @@ export default function Home() {
             placeholder='Enter email to get started'
             className='bg-input w-96 rounded-full text-[13px] px-8 py-2'
           />
+          <div className='flex  w-[60%] gap-1 absolute top-10 ml-9 items-center '></div>
           <Button />
         </div>
       </div>
@@ -152,8 +157,8 @@ export default function Home() {
         />
       </div>
       {/* first set */}
-      <div className=' my-16 flex xs:flex-col w-[90%] mx-auto justify-between xs:justify-center align-middle gap-9'>
-        <div className='w-[587px] h-[594px] xs:w-[371px] xs:h-[375.42px] bg-black relative rounded-[40px] shadow-xl'>
+      <div className=' my-16 flex xs:flex-col w-[90%] mx-auto justify-between xs:justify-center align-middle gap-9 '>
+        <div className='w-[587px] h-[594px] xs:w-[371px] xs:h-[375.42px] bg-black relative rounded-[40px] shadow-xl '>
           <h1 className='text-white absolute left-10 top-14 font-bold text-3xl xs:text-lg'>
             Innovative <br />
             Solutions
@@ -276,7 +281,7 @@ export default function Home() {
         <h1 className='text-center text-subBlue font-semibold text-[30px] mb-10'>
           Why You Should Choose Us
         </h1>
-        <div className='flex mx-auto w-[90%]'>
+        <div className='flex mx-auto w-[90%] xs:flex-col'>
           <div className='relative'>
             <Image
               src={whiteBg}
@@ -329,23 +334,35 @@ export default function Home() {
       </div>
 
       {/* Big Blue Bg */}
-      <div className='relative'>
-        <Image
-          src={bigBlue}
-          alt='Big blue background'
-          className='w-[1461px] h-[800px]'
-        />
-        <div className='absolute top-[65px] left-[100px]'>
-          <h1 className='text-[30px]  font-semibold text-white'>
+      <div className='relative xs:w-[400px]'>
+        <div>
+          <Image
+            src={bigBlue}
+            alt='Big blue background'
+            className='w-[1461px] h-[800px] xs:hidden '
+          />
+          <Image
+            src={bigsmall}
+            alt='small blue'
+            className='hidden xs:block  xs:w-[400px]  '
+          />
+          <Image
+            src={rectanglesmall}
+            alt='rectangle'
+            className='hidden xs:block xs:h-[600px] xs:w-[400px]'
+          />
+        </div>
+        <div className='absolute top-[65px] left-[100px] xs:left-[40px]'>
+          <h1 className='text-[30px]  font-semibold text-white xs:w-[50%]'>
             Who can use ledga?
           </h1>
-          <p className='text-[18px] w-[45%] text-white'>
+          <p className='text-[18px] w-[45%] text-white xs:w-[90%]'>
             Ledga will be used by different organizations such as Schools,
             Hotels, Hospitals and other organization that will need the services
             of ledga
           </p>
         </div>
-        <div className='grid grid-cols-2 gap-10 absolute top-[350px] left-[100px]'>
+        <div className='grid grid-cols-2 gap-10 absolute xs:grid-cols-1 top-[350px] left-[100px] xs:top-[300px] xs:mx-auto xs:left-[40px]'>
           <div className=' top-[65px] left-[100px]'>
             <div className='flex gap-4 items-center align-middle '>
               <div className='w-5 h-5 bg-white rounded-md shadow-sm'></div>
@@ -397,10 +414,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=' pt-20 pb-28 bg-[#F3F7FC]'>
-        <div className='flex w-[90%] mx-auto justify-between align-middle items-center pb-10'>
+      <div className=' pt-20 pb-28 bg-[#F3F7FC] xs:w-[100%]'>
+        <div
+          className='flex w-[90%] mx-auto justify-between align-middle items-center pb-10 xs:w-[100%] xs:justify-around
+        '
+        >
           <div>
-            <h1 className='w-[100%] text-[25px] ml-auto font-semibold text-subBlue'>
+            <h1 className='w-[100%] text-[25px] ml-auto font-semibold text-subBlue xs:w-[60%] xs:ml-5'>
               What people think about ledga
             </h1>
           </div>
@@ -422,7 +442,7 @@ export default function Home() {
           </div>
         </div>
         {/*  */}
-        <div className='flex w-[100%] ml-[64px] gap-9'>
+        <div className='flex w-[100%] ml-[64px] xs:m-auto gap-9 xs:flex-col '>
           <div className='flex flex-col bg-white items-center justify-center py-16 rounded-[40px]'>
             <div className='flex mr-[4.25rem] gap-5 align-middle items-center justify-start'>
               <Image

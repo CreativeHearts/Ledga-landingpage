@@ -10,7 +10,7 @@ import linkin from '@/public/linkin.png';
 export default function Footer() {
   const currentDate = new Date().getFullYear();
   return (
-    <div className='w-[90%] mx-auto relative xs:mx-0 xs:w-[100%]'>
+    <div className='w-[90%] mx-auto relative xs:mx-0 xs:w-[100%] mt-20'>
       <div className='flex w-[60%] gap-1 absolute  xs:w-[100%] top-10 xs:top-0 ml-9 xs:mx-auto items-center '>
         <input
           type='text'

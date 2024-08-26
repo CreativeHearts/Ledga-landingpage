@@ -23,12 +23,7 @@ import whiteBg from '@/public/subWhite.png';
 import bigBlue from '@/public/bigBlue.png';
 import bigsmall from '@/public/bigsmall.png';
 import rectanglesmall from '@/public/Rectangle 49.png';
-
-import costumer1 from '@/public/Ellipse 14.png';
-import costumer2 from '@/public/Ellipse 15.png';
-import costumer3 from '@/public/Ellipse 16.png';
-import arrowLeft from '@/public/Vector 2.png';
-import arrowRight from '@/public/Vector 3.png';
+import Testimonial from '@/ui/testimonial';
 
 export default function Home() {
   return (
@@ -414,100 +409,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=' pt-20 pb-28 bg-[#F3F7FC] xs:w-[100%]'>
-        <div
-          className='flex w-[90%] mx-auto justify-between align-middle items-center pb-10 xs:w-[100%] xs:justify-around
-        '
-        >
-          <div>
-            <h1 className='w-[100%] text-[25px] ml-auto font-semibold text-subBlue xs:w-[60%] xs:ml-5'>
-              What people think about ledga
-            </h1>
-          </div>
-          <div className='flex gap-2'>
-            <div className=' bg-black w-12 h-12 rounded-full flex justify-center items-center'>
-              <Image
-                src={arrowLeft}
-                alt='Arrow left'
-                className=' w-[20px] h-[19px]'
-              />
-            </div>
-            <div className=' bg-[#BDD0F1] w-12 h-12 flex justify-center rounded-full items-center'>
-              <Image
-                src={arrowRight}
-                alt='Arrow left'
-                className=' w-[20px] h-[19px] '
-              />
-            </div>
-          </div>
-        </div>
-        {/*  */}
-        <div className='flex w-[100%] ml-[64px] xs:m-auto gap-9 xs:flex-col '>
-          <div className='flex flex-col bg-white items-center justify-center py-16 rounded-[40px]'>
-            <div className='flex mr-[4.25rem] gap-5 align-middle items-center justify-start'>
-              <Image
-                src={costumer1}
-                alt='costomer 1'
-                className='w-[50px] h-[50px] '
-              />
-              <div>
-                <h1 className='text-17px] font-semibold'>Sarah Johnson,</h1>
-                <p className='text-[10px] font-light'>
-                  Principal at Greenfield High School
-                </p>
-              </div>
-            </div>
-            <p className='w-[80%] text-[13px] text-sm mt-5 leading-7'>
-              Ledga has transformed the way we manage our school&apos;s
-              finances. The user-friendly interface and seamless fee collection
-              process have saved us so much time. We can now track payments and
-              manage sub-accounts effortlessly. Highly recommend&quot;
-            </p>
-          </div>
-          <div className='flex flex-col bg-white items-center justify-center rounded-[40px]'>
-            <div className='flex mr-[4.25rem] gap-5 align-middle items-center'>
-              <Image
-                src={costumer2}
-                alt='costomer 1'
-                className='w-[50px] h-[50px] '
-              />
-              <div>
-                <h1 className='text-17px] font-semibold'>Sarah Johnson,</h1>
-                <p className='text-[10px] font-light'>
-                  Principal at Greenfield High School
-                </p>
-              </div>
-            </div>
-            <p className='w-[80%] text-[13px] text-sm mt-5 leading-7'>
-              Ledga has transformed the way we manage our school&apos;s
-              finances. The user-friendly interface and seamless fee collection
-              process have saved us so much time. We can now track payments and
-              manage sub-accounts effortlessly. Highly recommend&quot;
-            </p>
-          </div>
-          <div className='flex flex-col  bg-white items-center justify-center rounded-[40px]'>
-            <div className='flex mr-[4.25rem] gap-5 align-middle items-center'>
-              <Image
-                src={costumer3}
-                alt='costomer 1'
-                className='w-[50px] h-[50px] '
-              />
-              <div>
-                <h1 className='text-17px] font-semibold'>Sarah Johnson,</h1>
-                <p className='text-[10px] font-light'>
-                  Principal at Greenfield High School
-                </p>
-              </div>
-            </div>
-            <p className='w-[80%] text-[13px] mt-5 leading-7'>
-              Ledga has transformed the way we manage our school&apos;s
-              finances. The user-friendly interface and seamless fee collection
-              process have saved us so much time. We can now track payments and
-              manage sub-accounts effortlessly. Highly recommend&quot;
-            </p>
-          </div>
-        </div>
-      </div>
+      <Testimonial />
     </main>
   );
 }

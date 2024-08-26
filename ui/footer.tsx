@@ -22,19 +22,19 @@ export default function Footer() {
       <Image
         src={footerBlack}
         alt='footer background'
-        className='w-[127rem] mt-28 xs:hidden'
+        className='w-[100%] mt-28 xs:hidden'
       />
       <Image
         src={footersmall}
         alt='footer bg'
         className='hidden xs:block xs:w-[1276px]'
       />
-      <p className='text-white xs:text-[10px] absolute top-[189px] left-[75px] text-[15px] font-light xs:left-[20px]'>
+      <p className='text-white xs:text-[10px] absolute top-[75%] left-[10%] text-[15px] font-light xs:left-[20px]  '>
         {currentDate} Copyright. Ledga Innovative <br /> Solutions Limited
       </p>
       <div className='flex'>
         <div>
-          <div className=' text-white absolute left-[747px] top-[82px] xs:left-[20px]'>
+          <div className=' text-white absolute left-[64%] top-[25%] xs:left-[20px] xs:top-[30%]'>
             <h1 className='text-lg font-semibold xs:text-sm'>Contact</h1>
             <p className='font-light text-[15px] xs:text-[10px]'>08050605253</p>
             <p className='font-light xs:text-[10px] text-[15px]'>
@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='absolute left-[950px] text-white xs:left-[292px] top-[82px]'>
+        <div className='absolute left-[85%] text-white xs:left-[292px] top-[25%] xs:top-[30%]'>
           <h1 className='text-lg font-semibold xs:text-sm'>Address</h1>
           <p className='font-light xs:text-[10px] text-[15px]'>
             Abuja, Nigeria

@@ -153,7 +153,7 @@ export default function Home() {
       </div>
       {/* first set */}
       <div className=' my-16 flex xs:flex-col w-[90%] mx-auto justify-between xs:justify-center align-middle gap-9 '>
-        <div className='w-[587px] h-[594px] xs:w-[371px] xs:h-[375.42px] bg-black relative rounded-[40px] shadow-xl '>
+        <div className='w-[100%] h-[594px] xs:w-[371px] xs:h-[375.42px] bg-black relative rounded-[40px] shadow-xl '>
           <h1 className='text-white absolute left-10 top-14 font-bold text-3xl xs:text-lg'>
             Innovative <br />
             Solutions
@@ -172,7 +172,7 @@ export default function Home() {
             className='w-[46%] absolute bottom-0 right-0 rounded-br-3xl'
           />
         </div>
-        <div className='relative w-[587px] h-[587px] xs:w-[370px] xs:h-[375px] shadow-xl rounded-[40px] '>
+        <div className='relative w-[100%] h-[587px] xs:w-[370px] xs:h-[375px] shadow-xl rounded-[40px] '>
           {/* Hand image at the background */}
           <Image
             src={hand}
@@ -203,32 +203,32 @@ export default function Home() {
         </div>
       </div>
       {/* next set */}
-      <div className='flex w-[90%] xs:flex-col mx-auto gap-9 xs:grid'>
+      <div className='flex w-[100%] xs:flex-col mx-auto gap-9 xs:grid'>
         <div
-          className='relative bg-[#F3F7FC] rounded-[50px] 
+          className='relative w-[100%]  rounded-[50px] 
          '
         >
           <Image
             src={subBlue}
             alt='blue background'
-            className='w-[587px] h-[594px]  relative xs:w-[370px] xs:h-[374.41px]'
+            className='w-[100%] h-[678px]  relative xs:w-[370px] xs:h-[374.41px]'
           />
-          <p className='absolute top-12  left-28 xs:left-16 font-semibold text-[20px] text-white '>
+          <p className='absolute top-[13%]  left-36 xs:left-16 font-semibold text-[20px] text-white '>
             Market size
           </p>
-          <div className='absolute xs:left-16 top-20 left-28 xs:top-20 text-white '>
+          <div className='absolute xs:left-16 top-[20%] left-36 xs:top-20 text-white '>
             <h1 className='font-bold text-[70px]  xs:text-[40px] '>264</h1>
             <p className='text-[15px] mt-[-20px] font-light xs:mt-[-10px]'>
               Tertiary Institution
             </p>
           </div>
-          <div className='absolute xs:left-16 top-48 xs:top-40 left-28 text-white '>
-            <h1 className='font-bold text-[70px] xs:text-[40px] '>104.6K</h1>
+          <div className='absolute xs:left-16 top-[40%] xs:top-40 left-36 text-white '>
+            <h1 className='font-bold text-[70px] xs:text-[38px] '>104.6K</h1>
             <p className='text-[15px] mt-[-20px] font-light xs:mt-[-10px] '>
               Companies
             </p>
           </div>
-          <div className='absolute xs:left-16 top-80 left-28 text-white xs:top-60'>
+          <div className='absolute xs:left-16 top-[60%] left-36 text-white xs:top-60'>
             <h1 className='font-bold text-[70px] xs:text-[40px]  '>1.8m</h1>
             <p className={`text-[15px] mt-[-20px] font-light xs:mt-[-10px] `}>
               Students
@@ -238,20 +238,20 @@ export default function Home() {
             <Image
               src={circle}
               alt='circle'
-              className='absolute top-4 right-12 w-[108px] h-[106px] xs:w-[60px] xs:h-[59px]'
+              className='absolute top-[5%] right-[12%] w-[108px] h-[106px] xs:w-[60px] xs:h-[59px]'
             />
             <Image
               src={arrow}
               alt='arrow'
-              className='absolute top-[3.25rem] right-[83px] xs:top-[2.25rem] xs:right-[69px] w-[37px] h-[36px] xs:w-[20px] xs:h-[20px]'
+              className='absolute top-[10%] right-[17%] xs:top-[2.25rem] xs:right-[69px] w-[37px] h-[36px] xs:w-[20px] xs:h-[20px]'
             />
           </div>
         </div>
-        <div className='relative'>
+        <div className='relative w-[100%]'>
           <Image
             src={subBlack}
             alt='black background'
-            className='w-[566.87px] h-[368px] xs:w-[377.45px] xs:h-[245px]'
+            className='w-[90%] h-[350px] xs:w-[377.45px] xs:mx-auto xs:h-[245px]'
           />
           <div className='absolute top-20 left-16 text-white xs:top-9'>
             <h1 className=' font-bold text-[70px] xs:text-[40px]'>N4.8m</h1>
@@ -260,7 +260,7 @@ export default function Home() {
               of transactions
             </p>
           </div>
-          <div className='bg-[#F3F7FC] w-[575px] h-[179px] rounded-[50px] xs:w-[377px] xs:h-[117px] gap-8 xs:gap-6 mt-[47px] flex justify-center items-center'>
+          <div className='bg-[#F3F7FC] w-[90%] h-[179px] rounded-[50px] xs:w-[377px] xs:mx-auto xs:h-[117px] gap-8 xs:gap-6 mt-[47px] flex justify-center items-center '>
             <h1 className=' font-bold text-subBlue text-[70px] xs:text-[40px]'>
               70K
             </h1>
@@ -277,7 +277,7 @@ export default function Home() {
           Why You Should Choose Us
         </h1>
         <div className='flex mx-auto w-[90%] xs:flex-col'>
-          <div className='relative'>
+          <div className='relative w-[100%]'>
             <Image
               src={whiteBg}
               alt='whiteB background'
@@ -293,7 +293,7 @@ export default function Home() {
               All transactions on Ledga are totally free and fast
             </p>
           </div>
-          <div className='relative'>
+          <div className='relative w-[100%]'>
             <Image
               src={whiteBg}
               alt='whiteB background'
@@ -309,7 +309,7 @@ export default function Home() {
               ALedga helps your student manage pocket money and make payments
             </p>
           </div>
-          <div className='relative'>
+          <div className='relative w-[100%]'>
             <Image
               src={whiteBg}
               alt='whiteB background'
@@ -334,17 +334,17 @@ export default function Home() {
           <Image
             src={bigBlue}
             alt='Big blue background'
-            className='w-[1461px] h-[800px] xs:hidden '
+            className='w-[100%] h-[800px] xs:hidden '
           />
           <Image
             src={bigsmall}
             alt='small blue'
-            className='hidden xs:block  xs:w-[400px]  '
+            className='hidden xs:block  xs:w-[100%]  '
           />
           <Image
             src={rectanglesmall}
             alt='rectangle'
-            className='hidden xs:block xs:h-[600px] xs:w-[400px]'
+            className='hidden xs:block xs:h-[600px] xs:w-[100%]'
           />
         </div>
         <div className='absolute top-[65px] left-[100px] xs:left-[40px]'>

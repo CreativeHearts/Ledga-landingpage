@@ -109,7 +109,7 @@ export default function Home() {
             className='bg-input w-96 rounded-full text-[13px] px-8 py-2'
           />
           <div className='flex  w-[60%] gap-1 absolute top-10 ml-9 items-center '></div>
-          <Button />
+          <GetStartedBtn />
         </div>
       </div>
       <p className=' text-center mt-24'>

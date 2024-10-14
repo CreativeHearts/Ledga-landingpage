@@ -5,7 +5,7 @@ import '@/app/globals.css';
 import blueCard from '@/public/bluecard.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Button from '@/ui/button';
+// import Button from '@/ui/button';
 import desktopCard from '@/public/Subtract (2).png';
 import halfImage from '@/public/half-image.png';
 import iphone from '@/public/iphone.png';
